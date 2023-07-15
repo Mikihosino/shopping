@@ -1,0 +1,42 @@
+.product-container {
+  font-family: var(--font-family);
+  margin: 60px;
+  align-items: center;
+  text-align: center;
+
+}
+
+.product-container img{
+  width: 100%;
+  height: auto;
+}
+
+.description b {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.description p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.description p {
+  margin: 0 0 20px 0;
+}
+
+.addToCartBttn {
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  outline: none;
+}
+
+.addToCartBttn:hover {
+  color: white;
+  background-color: black;
+}
+
+.addToCartBttn:active {
+  opacity: 0.6;
+}

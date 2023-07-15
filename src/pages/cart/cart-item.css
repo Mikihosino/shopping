@@ -1,0 +1,51 @@
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cartItem img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.cartItem .description {
+  flex: 1;
+}
+
+.cartItem .description p {
+  margin: 0;
+}
+
+.cartItem .description b {
+  font-weight: bold;
+}
+
+.cartItem .countHandler {
+  display: flex;
+  align-items: center;
+}
+
+.cartItem .countHandler button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cartItem .countHandler button:hover {
+  background-color: #e0e0e0;
+}
+
+.cartItem .countHandler input {
+  width: 40px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+

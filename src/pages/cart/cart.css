@@ -1,0 +1,26 @@
+.cart {
+  font-family: var(--font-family);
+  flex-direction: column;
+  text-align: center;
+}
+
+.checkout button {
+  padding: 0.5rem;
+  margin: 0.5rem  0.5rem;
+  font-size: 1rem;
+  color: #ccc;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout button:hover {
+  background-color: #656565;
+}
+
+
+
+
+
+
