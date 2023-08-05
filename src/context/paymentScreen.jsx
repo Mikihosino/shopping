@@ -12,7 +12,7 @@ import {Collapse} from 'react-collapse';
 
 
 export const PaymentScreen = ({ product }) => {
-  const {period, price} = product;
+  const {price} = product;
   return (
     <div className="container d-flex justify-content-center mt-5 mb-5">
       <div className="row g-3">
@@ -102,14 +102,13 @@ export const PaymentScreen = ({ product }) => {
 
           <div className="card">
             <div className="d-flex justify-content-between p-3">
-              <div className="d-flex flex-column">
+              {/* <div className="d-flex flex-column">
                 <span>{period} month(Billed Monthly) <i className="fa fa-caret-down"></i></span>
                 <a href="#" className="billing">Save 20% with annual billing</a>
-              </div>
+              </div> */}
 
               <div className="mt-1">
-                <sup className="super-price">${price}</sup>
-                <span className="super-month">/Month</span>
+                <sup className="super-price">Total: ${price}</sup>
               </div>
             </div>
 
@@ -117,13 +116,13 @@ export const PaymentScreen = ({ product }) => {
 
             <div className="p-3">
               <div className="d-flex justify-content-between mb-2">
-                <span>Refferal Bonouses</span>
-                <span>-$2.00</span>
+                <span>Subtotal</span>
+                <span>${price}</span>
               </div>
 
               <div className="d-flex justify-content-between">
-                <span>Vat <i className="fa fa-clock-o"></i></span>
-                <span>-20%</span>
+                <span>Shipping <i className="fa fa-clock-o"></i></span>
+                <span>Free</span>
               </div>
             </div>
 
@@ -132,13 +131,13 @@ export const PaymentScreen = ({ product }) => {
             <div className="p-3 d-flex justify-content-between">
               <div className="d-flex flex-column">
                 <span>Today you pay(US Dollars)</span>
-                <small>After 30 days $9.59</small>
+                <small>After 30 days +$9.59</small>
               </div>
               <span>$0</span>
             </div>
 
             <div className="p-3">
-              <button className="btn btn-primary btn-block free-button">Try it free for 30 days</button>
+              <button className="btn btn-primary btn-block free-button">Check Out</button>
               <div className="text-center">
                 <a href="#">Have a promo code?</a>
               </div>
