@@ -18,8 +18,6 @@ export const Shop = () => {
           ))
         }
       </div>
-      <button onClick={() => navigate("/")}> Go Back</button>
-      shop
     </div>
   )
 }
