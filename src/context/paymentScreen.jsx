@@ -108,7 +108,7 @@ export const PaymentScreen = ({ product }) => {
               </div> */}
 
               <div className="mt-1">
-                <sup className="super-price">Total: ${price}</sup>
+                <sup className="super-price">Total:${price}</sup>
               </div>
             </div>
 
