@@ -3,6 +3,8 @@ import './shop.css';
 import { PRODUCTS } from '../../products';
 import { Product } from './product'
 
+
+
 import { useNavigate } from "react-router-dom";
 
 export const Shop = () => {

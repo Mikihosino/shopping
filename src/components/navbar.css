@@ -12,8 +12,23 @@
   align-items: center;
 }
 
+.links :hover {
+  color: #878787fe;
+}
+
 .links a {
   text-decoration: none;
-  color: var(--color-text);
+  color: white;
   margin-left: 20px;
+}
+
+.cart-badge {
+  background-color: #ff9019;
+  color: #000000e2;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-left: -18px;
+  margin-bottom: 28px;
+  padding: 0px 6px;
+  font-size: 18px;
 }

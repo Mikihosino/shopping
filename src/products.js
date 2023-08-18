@@ -1,4 +1,4 @@
-import product2 from "./assets/2.png";
+import product2 from "./assets/2.jpg";
 import product3 from "./assets/3.png";
 import product5 from "./assets/5.png";
 import product6 from "./assets/6.webp";
@@ -8,8 +8,8 @@ import product8 from "./assets/8.webp";
 export const PRODUCTS = [
   {
     id:1,
-    productName: "Laptop Pro",
-    price: 1470.0,
+    productName: "adults plain cotton tshirt 2",
+    price: 47.0,
     productImage: product2
   },
   {

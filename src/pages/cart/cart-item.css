@@ -1,7 +1,7 @@
 .cartItem {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .cartItem img {
@@ -16,7 +16,7 @@
 }
 
 .cartItem .description p {
-  margin: 0;
+  margin: 0 1 1 1;
 }
 
 .cartItem .description b {
@@ -36,6 +36,7 @@
   cursor: pointer;
 }
 
+
 .cartItem .countHandler button:hover {
   background-color: #e0e0e0;
 }
@@ -46,6 +47,20 @@
   font-size: 1rem;
   text-align: center;
   border: 1px solid #ccc;
+}
+
+.deleteButton {
+  padding-top: 7px;
+}
+
+.deleteButton button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background-color: #ffff19c3;
+  border: 1px solid #656161;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 700;
 }
 
 

@@ -58,12 +58,12 @@ text-indent: 25px;
 }
 
 .card-text{
-font-size: 13px;
-margin-left: 6px;
+  font-size: 13px;
+  margin-left: 6px;
 }
 
 .certificate-text{
-font-size: 12px;
+  font-size: 12px;
 }
 
     
@@ -72,43 +72,42 @@ font-size: 12px;
 }  
 
 .super-price{
-top: 0px;
-font-size: 22px;
+  top: 0px;
+  font-size: 22px;
 }
 
 .super-month{
-font-size: 11px;
+  font-size: 11px;
 }
 
 
 .line{
-color: #bfbdbd;
+  color: #bfbdbd;
 }
 
 .free-button{
-background: #1565c0;
-height: 52px;
-font-size: 15px;
-border-radius: 8px;
+  background: #1565c0;
+  height: 52px;
+  font-size: 15px;
+  border-radius: 8px;
 }
 
 
 .payment-card-body{
-flex: 1 1 auto;
-padding: 24px 1rem !important;
+  flex: 1 1 auto;
+  padding: 24px 1rem !important;
 }
 
 .paypal-icons {
-color: #039be5;
-margin-left: 216px;
+  color: #039be5;
+  margin-left: 216px;
 }
 
 .icons {
-margin-left: 84px;
+  display: flex;
+  margin-left: 84px;
 }
 
 .icons i{
-margin: 3px 4px;
+  margin: 3px 4px;
 }
-
-

@@ -9,8 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Collapse} from 'react-collapse';
 
 
-
-
 export const PaymentScreen = ({ product }) => {
   const {price} = product;
   return (
@@ -25,6 +23,7 @@ export const PaymentScreen = ({ product }) => {
                 <div className="card-header p-0" >
                   <Collapse isOpened={true}>
                     <h2 className="mb-0">
+
                       <button className="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div className="d-flex align-items-center justify-content-between">
                           <span>Paypal</span>
@@ -102,10 +101,6 @@ export const PaymentScreen = ({ product }) => {
 
           <div className="card">
             <div className="d-flex justify-content-between p-3">
-              {/* <div className="d-flex flex-column">
-                <span>{period} month(Billed Monthly) <i className="fa fa-caret-down"></i></span>
-                <a href="#" className="billing">Save 20% with annual billing</a>
-              </div> */}
 
               <div className="mt-1">
                 <sup className="super-price">Total:${price}</sup>
