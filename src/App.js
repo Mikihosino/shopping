@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
-
+import ImageSlider from './ImageSlider'; 
+import { SLIDERDATA } from './sliderData';
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Navbar } from "./components/navbar";
@@ -10,12 +11,14 @@ import { Payment } from './pages/cart/payment.jsx';
 import { ShopContextProvider } from './context/shop-context';
 
 
+
 function App() {
   return (
     <div className="App">
       <ShopContextProvider>
         <Router>
           <Navbar/>
+          <ImageSlider slides={SLIDERDATA} /> {/* Add this line */}
           <Routes>
             <Route path="/" element={<Shop />}/>
             <Route path="/cart" element={<Cart />}/>
