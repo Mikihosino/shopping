@@ -18,9 +18,13 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Navbar/>
-          <ImageSlider slides={SLIDERDATA} /> {/* Add this line */}
           <Routes>
-            <Route path="/" element={<Shop />}/>
+            <Route path="/" element={
+              <>
+              <ImageSlider slides={SLIDERDATA} /> 
+              <Shop />
+              </>
+            }/>
             <Route path="/cart" element={<Cart />}/>
             <Route path="/payment" element={<Payment />}/>
 
