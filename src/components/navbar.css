@@ -31,7 +31,7 @@
 
 .cart { 
   position: relative;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 
@@ -41,10 +41,10 @@
   color: #000000e2;
   font-weight: 700;
   border-radius: 20px;
-  margin-left: -18px;
-  margin-bottom: 28px;
+  margin-left: -24.5px;
+  bottom: 26px;
   padding: 0px 6px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 800px){

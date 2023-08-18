@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { PaymentScreen } from '../../context/paymentScreen'
 import { ShopContext } from '../../context/shop-context'
-import { getTotalCartAmount } from './cart'
 
 export const Payment = () => {
   const { getTotalCartAmount } = useContext(ShopContext);
