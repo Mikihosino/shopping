@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect}  from 'react'
 import {Link} from "react-router-dom";
 import {ShoppingCart} from "phosphor-react";
 import { ShopContext } from '../context/shop-context';
+import shopLogo from '../assets/logo.png'; 
+
 
 
 import './navbar.css';
@@ -19,13 +21,17 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="links">
-        <Link to="/">Goods Shop</Link>
+        <Link to="/">
+          <img className='shopLogo' src={shopLogo} alt='shop Logo'/>
+        </Link>
+        <div className='cart'>
         <Link to="/cart">
           <ShoppingCart size={33} />
         </Link>
         {
         <span className="cart-badge">{cartItemCount}</span>
         }
+        </div>
         
       </div> 
     </div>

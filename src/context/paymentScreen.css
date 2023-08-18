@@ -65,8 +65,7 @@ text-indent: 25px;
 .certificate-text{
   font-size: 12px;
 }
-
-    
+ 
 .billing{
   font-size: 11px;
 }  
@@ -80,7 +79,6 @@ text-indent: 25px;
   font-size: 11px;
 }
 
-
 .line{
   color: #bfbdbd;
 }
@@ -91,7 +89,6 @@ text-indent: 25px;
   font-size: 15px;
   border-radius: 8px;
 }
-
 
 .payment-card-body{
   flex: 1 1 auto;

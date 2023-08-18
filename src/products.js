@@ -8,7 +8,7 @@ import product8 from "./assets/8.webp";
 export const PRODUCTS = [
   {
     id:1,
-    productName: "adults plain cotton tshirt 2",
+    productName: "adults cotton tshirt 2",
     price: 47.0,
     productImage: product2
   },
