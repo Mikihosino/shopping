@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <ShopContextProvider>
         <Router>
-          <Navbar/>
+        <Navbar />
           <Routes>
             <Route path="/" element={
               <>
@@ -27,7 +27,6 @@ function App() {
             }/>
             <Route path="/cart" element={<Cart />}/>
             <Route path="/payment" element={<Payment />}/>
-
           </Routes>
         </Router>
       </ShopContextProvider>

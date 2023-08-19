@@ -12,7 +12,7 @@ export const Cart = () => {
   const totalAmount = getTotalCartAmount()
   const navigate = useNavigate()
   return (
-    <div className='cart'>
+    <div className='CartContents'>
       <div><h1> Your Cart Items</h1></div>
       <div className='cartItems'>
         {PRODUCTS.map((product) => {

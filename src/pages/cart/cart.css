@@ -1,7 +1,8 @@
-.cart {
+.CartContents {
   font-family: var(--font-family);
   flex-direction: column;
   text-align: center;
+  padding-top: 30px;
 }
 
 .checkout button {
@@ -30,25 +31,12 @@
   transition: 0.5s;
 }
 
-.checkout.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+@media only screen and (max-width: 800px){
+  .CartContents{
+    padding-top: 50px;
+    padding-left: 10px;
+  }
 }
-
-.checkout.button:hover span {
-  padding-right: 25px;
-}
-
-.checkout.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
 
 
 

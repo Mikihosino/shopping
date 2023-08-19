@@ -11,6 +11,10 @@ import './navbar.css';
 export const Navbar = () => {
   const {getTotalQuantity} = useContext(ShopContext);
   const [cartItemCount, setCartItemCount] = useState(getTotalQuantity());
+  const navbarStyle = {
+    position: 'fixed', // Add the desired style here
+    // Other style properties can be added here as well
+  };
 
   useEffect(() => {
     const totalQty = getTotalQuantity(); // カート内の合計数量を取得
@@ -19,20 +23,19 @@ export const Navbar = () => {
 
 
   return (
-    <div className="navbar">
+    <div className="navbar" style={navbarStyle}>
       <div className="links">
         <Link to="/">
           <img className='shopLogo' src={shopLogo} alt='shop Logo'/>
         </Link>
         <div className='cart'>
-        <Link to="/cart">
-          <ShoppingCart size={33} />
-        </Link>
-        {
-        <span className="cart-badge">{cartItemCount}</span>
-        }
+          <Link to="/cart">
+            <ShoppingCart size={33} />
+          </Link>
+          {
+          <span className="cart-badge">{cartItemCount}</span>
+          }
         </div>
-        
       </div> 
     </div>
   )

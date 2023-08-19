@@ -3,12 +3,11 @@
   margin: 60px;
   align-items: center;
   text-align: center;
-
 }
 
 .product-container img{
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .description b {
@@ -27,6 +26,7 @@
 
 .addToCartBttn {
   border-radius: 10px;
+  font-size: 16px;
   color: black;
   background-color: rgb(255, 251, 0);
   outline: none;
@@ -36,9 +36,21 @@
   opacity: 0.6;
 }
 
+.deleteBttn {
+  text-align: center;
+  color: rgb(43, 43, 175);
+  border: none; 
+  background-color: white;
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 800px) {
   .product-container {
     margin: 24px;
+  }
+
+  .addToCartBttn {
+    font-size: 10px;
   }
 }
 

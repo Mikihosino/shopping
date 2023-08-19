@@ -1,6 +1,7 @@
 .slider img {
   width: 100%;
   height: auto;
+  top: 90px;
 }
 
 .img {
@@ -39,13 +40,13 @@
 
 @media only screen and (max-width: 800px) {
   .right-arrow{
-    top: 50%;
+    top: 55%;
     right: 12px;
     font-size: 1rem;
   }
 
   .left-arrow{
-    top: 50%;
+    top: 55%;
     left: 12px;
     font-size: 1rem;
   }
@@ -53,11 +54,11 @@
 
 .slide {
   opacity: 0;
-  transition-duration: 1s ease;
+  transition-duration: 0.4s ease;
 }
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: 0.4s;
   transform: scale(1.08);
 }
