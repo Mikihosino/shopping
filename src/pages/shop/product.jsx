@@ -12,9 +12,7 @@ export const Product = (props) => {
     <div className='product-container'>
       <img src={productImage} />
       <div className='description'>
-        
-          <b>{productName}</b>
-        
+        <b>{productName}</b>
         <p>${price}</p>
       </div>
       <button className='addToCartBttn' onClick={() => addToCart(id)}>

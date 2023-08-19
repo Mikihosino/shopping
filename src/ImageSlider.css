@@ -1,12 +1,7 @@
 .slider img {
   width: 100%;
   height: auto;
-  top: 90px;
-}
-
-.img {
-  border-radius: 10px;
-  margin: 3px 10px;
+  margin-top: -20px;
 }
 
 .slider {
@@ -16,40 +11,7 @@
   align-items: center;
 }
 
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color: #ffffff;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color:  #ffffff;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
 @media only screen and (max-width: 800px) {
-  .right-arrow{
-    top: 55%;
-    right: 12px;
-    font-size: 1rem;
-  }
-
-  .left-arrow{
-    top: 55%;
-    left: 12px;
-    font-size: 1rem;
-  }
 }
 
 .slide {
