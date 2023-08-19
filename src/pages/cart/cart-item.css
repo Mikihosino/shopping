@@ -1,8 +1,12 @@
 .cartItem {
-  display: flex; 
+  display: grid;
+  grid-template-columns: 100px 200px;
   align-items: center; 
   justify-content: center; 
-  padding: 20px 20%;
+  padding: 8px 20%;
+  margin: 6px 16px;
+  border-style: solid;
+  border-color: #ccc;
 }
 
 .cartItem img {
@@ -10,6 +14,11 @@
   height: 100px;
   object-fit: contain;
   margin-right: 1rem;
+}
+
+.cartItem img,
+.description {
+  padding-bottom: 6px;
 }
 
 .cartItem .description {
@@ -37,11 +46,6 @@
   cursor: pointer;
 }
 
-
-.cartItem .countHandler button:hover {
-  background-color: #e0e0e0;
-}
-
 .cartItem .countHandler input {
   width: 40px;
   padding: 0.5rem;
@@ -50,18 +54,14 @@
   border: 1px solid #ccc;
 }
 
-.deleteButton {
-  padding-top: 7px;
-}
-
 .deleteButton button {
-  padding: 0.5rem;
+  display: inline;
   font-size: 0.8rem;
-  background-color: #ffff19c3;
-  border: 1px solid #656161;
+  color: rgb(43, 43, 175);
+  border: none; 
+  background-color: white;
   cursor: pointer;
-  border-radius: 15px;
-  font-weight: 700;
+  padding-left: 60%;
 }
 
 

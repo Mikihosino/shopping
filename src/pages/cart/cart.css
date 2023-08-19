@@ -2,7 +2,6 @@
   font-family: var(--font-family);
   flex-direction: column;
   text-align: center;
-  padding-top: 30px;
 }
 
 .checkout button {
@@ -34,7 +33,6 @@
 @media only screen and (max-width: 800px){
   .CartContents{
     padding-top: 50px;
-    padding-left: 10px;
   }
 }
 
