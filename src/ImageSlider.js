@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ImageSlider.css';
 import { SLIDERDATA } from './sliderData';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -11,9 +10,15 @@ const ImageSlider = ({ slides }) => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      nextSlide();
+    }, 2000); // 2秒ごとに次のスライドに切り替える
+
+    return () => {
+      clearInterval(slideInterval); // コンポーネントがアンマウントされたときにインターバルをクリアする
+    };
+  }, [current]); // currentの変更時にuseEffectが実行される
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
@@ -21,8 +26,6 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className='slider'>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
       {SLIDERDATA.map((slide, index) => {
         return (
           <div
@@ -38,4 +41,5 @@ const ImageSlider = ({ slides }) => {
     </section>
   );
 };
+
 export default ImageSlider;

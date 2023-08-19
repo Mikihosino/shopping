@@ -7,7 +7,15 @@ export const CartItem = (props) => {
   const {cartItems, addToCart, removeFromCart, updateCartItemCount, deleteCartItem} = useContext(ShopContext);
   return (
     <div className='cartItem'>
+      <div>
       <img src={productImage} />
+      <div className='description'> 
+        <p><b>
+          {productName}</b></p>
+        <p> ${price}</p>
+      </div>
+      </div>
+      
       <div className='buttons'>
         <div className='countHandler'>
           <button onClick={() => removeFromCart(id)}> - </button>
@@ -17,11 +25,6 @@ export const CartItem = (props) => {
         <div className='deleteButton'>
           <button onClick={() => deleteCartItem(id)}> Delete</button>
         </div>
-      </div>
-      <div className='description'> 
-        <p><b>
-          {productName}</b></p>
-        <p> ${price}</p>
       </div>
     </div>
   )
