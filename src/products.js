@@ -24,31 +24,31 @@ export const PRODUCTS = [
   },
   {
     id:2,
-    productName: "HP RTX3050",
+    productName: "HP Laptop, Gaming PC, RTX3050",
     price: 1000.0,
     productImage: product2
   },
   {
     id:3,
-    productName: "Canon",
+    productName: "Canon EOS Kiss X90 DSLR",
     price: 1090.0,
     productImage: product3
   },
   {
     id:4,
-    productName: "LED Lights",
+    productName: "LED Color Modes 24W",
     price: 30.0,
     productImage: product4
   },
   {
     id:5,
-    productName: "MSL Katana",
+    productName: "MSL Gaming Laptop Katana",
     price: 1500.0,
     productImage: product5
   },
   {
     id:6,
-    productName: "Keybord",
+    productName: "Razer BlackWidow V3 Keybord",
     price: 120.0,
     productImage: product6
   },
@@ -60,25 +60,25 @@ export const PRODUCTS = [
   },
   {
     id:8,
-    productName: "Nikon Lens",
+    productName: "Nikon 28-75mm f/2.8 Lens",
     price: 900.0,
     productImage: product8
   },
   {
     id:9,
-    productName: "Nikon Z5",
+    productName: "Nikon Z5 Mirrorless Digital Camera",
     price: 120.0,
     productImage: product9
   },
   {
     id:10,
-    productName: "Razer laptop",
+    productName: "Razer Blade 17 RZ09 laptop",
     price: 1998.0,
     productImage: product10
   },
   {
     id:11,
-    productName: "Razer v2",
+    productName: "Razer Gaming Mouse, High Speed Wireless",
     price: 80.0,
     productImage: product11
   },

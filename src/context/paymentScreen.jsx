@@ -3,7 +3,6 @@ import './paymentScreen.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faCreditCard } from '@fortawesome/free-regular-svg-icons'
 import { faCcMastercard, faCcVisa, faCcAmex, faCcJcb, faCcPaypal } from '@fortawesome/free-brands-svg-icons'
-import { useNavigate } from "react-router-dom";
 import { faKey } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,16 +11,10 @@ import {Collapse} from 'react-collapse';
 
 export const PaymentScreen = ({ product }) => {
   const {price} = product;
-  const navigate = useNavigate()
   return (
     <div className="container d-flex justify-content-center mt-5 mb-5">
       <div className="row g-3">
         <div className="col-md-6">
-          <div className='navibttn'>
-            <button onClick={() => navigate("/")}>Shopping/</button>
-            
-            <button onClick={() => navigate("/cart")}> <span>Cart</span></button>
-          </div>
           <span>Payment Method</span>
           <div className="card">
           

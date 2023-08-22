@@ -2,6 +2,15 @@
   font-family: var(--font-family);
   flex-direction: column;
   text-align: center;
+  margin-top: -30px;
+}
+
+.checkout p {
+  color: #d65e5e;
+  text-align: end;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 .checkout button {
@@ -28,6 +37,13 @@
   display: inline-block;
   position: relative;
   transition: 0.5s;
+}
+
+.CartTitle {
+  margin-top: -20px;
+  background-color: var(--color-bg);
+  color: #FFFFFF;
+  font-size: 28px;
 }
 
 @media only screen and (max-width: 800px){

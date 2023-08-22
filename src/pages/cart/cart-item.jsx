@@ -22,8 +22,8 @@ export const CartItem = (props) => {
       </div>
 
       <div className='deleteButton'>
-          <button onClick={() => deleteCartItem(id)}><Trash size={28}/></button>
-        </div>
+        <button onClick={() => deleteCartItem(id)}><Trash size={28}/></button>
+      </div>
     </div>
   )
 }

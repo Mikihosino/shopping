@@ -1,0 +1,13 @@
+.navibttn{
+  margin-top: -30px;
+  background-color: var(--color-bg);
+  padding-bottom: 10px;
+  padding-left: 6px;
+}
+
+.navibttn button{
+  border: none;
+  color: #ffffff;
+  background-color: var(--color-bg);
+  font-weight: 300;
+}

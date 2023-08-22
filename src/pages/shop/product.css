@@ -1,5 +1,5 @@
 .product-container {
-  height: 180px;
+  height: 200px;
   font-family: var(--font-family);
   margin: 60px;
   align-items: center;
@@ -13,21 +13,21 @@
 }
 
 .description b {
-  font-size: 22px;
-  font-weight: 800;
-  -webkit-line-clamp: 1;
+  display: block;
   -webkit-box-orient: vertical;
-  display: -webkit-box;
-
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-
+  max-height: 2em; /* 2行分の高さ（1行あたりの高さ × 行数） */
+  line-height: 1em; /* 1行あたりの高さ */
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .description p {
   font-size: 16px;
   font-weight: 500;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .addToCartBttn {
@@ -40,14 +40,6 @@
 
 .addToCartBttn:active {
   opacity: 0.6;
-}
-
-.deleteBttn {
-  text-align: center;
-  color: rgb(43, 43, 175);
-  border: none; 
-  background-color: white;
-  margin-left: 10px;
 }
 
 @media only screen and (max-width: 800px) {

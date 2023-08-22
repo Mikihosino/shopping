@@ -13,7 +13,9 @@ export const Cart = () => {
   const navigate = useNavigate()
   return (
     <div className='CartContents'>
-      <div><h1> Your Cart Items</h1></div>
+      <div className='CartTitle'>
+        <p>Your Cart Items</p>
+      </div>
       <div className='cartItems'>
         {PRODUCTS.map((product) => {
           if (cartItems [product.id] !== 0) {

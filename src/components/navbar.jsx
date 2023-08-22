@@ -1,10 +1,8 @@
 import React, { useState, useContext, useEffect}  from 'react'
-import {Link} from "react-router-dom";
-import {ShoppingCart} from "phosphor-react";
+import { Link, useLocation } from "react-router-dom";
+import { ShoppingCart} from "phosphor-react";
 import { ShopContext } from '../context/shop-context';
 import shopLogo from '../assets/logo.png'; 
-
-
 
 import './navbar.css';
 
@@ -15,7 +13,7 @@ export const Navbar = () => {
     position: 'fixed', // Add the desired style here
     // Other style properties can be added here as well
   };
-
+  const location = useLocation();
   useEffect(() => {
     const totalQty = getTotalQuantity(); // カート内の合計数量を取得
     setCartItemCount(totalQty); // カートの数量を更新
@@ -23,10 +21,10 @@ export const Navbar = () => {
 
 
   return (
-    <div className="navbar" style={navbarStyle}>
+    <div className='navbar' style={navbarStyle}>
       <div className="links">
         <Link to="/">
-          <img className='shopLogo' src={shopLogo} alt='shop Logo'/>
+          <div><img className='shopLogo' src={shopLogo} alt='shop Logo'/></div>         
         </Link>
         <div className='cart'>
           <Link to="/cart">
