@@ -13,15 +13,16 @@
 }
 
 .description b {
+  width: 250px; 
   display: block;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 2em; /* 2行分の高さ（1行あたりの高さ × 行数） */
-  line-height: 1em; /* 1行あたりの高さ */
-  font-size: 22px;
+  max-height: 64px; /* 2行分の高さ（1行あたりの高さ × 行数） */
+  line-height: 32px; /* 1行あたりの高さ */
+  font-size: 26px;
   font-weight: 800;
+  text-overflow: ellipsis;
 }
 
 .description p {
@@ -49,6 +50,13 @@
 
   .addToCartBttn {
     font-size: 10px;
+  }
+
+  .description b {
+    width: 152px; 
+    font-size: 18px;
+    max-height: 44px; /* 2行分の高さ（1行あたりの高さ × 行数） */
+    line-height: 22px; /* 1行あたりの高さ */
   }
 }
 

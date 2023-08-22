@@ -46,11 +46,7 @@
   font-size: 28px;
 }
 
-@media only screen and (max-width: 800px){
-  .CartContents{
-    padding-top: 50px;
-  }
-}
+
 
 
 

@@ -18,25 +18,25 @@ import product11 from "./assets/product-image/RazerV2.jpg";
 export const PRODUCTS = [
   {
     id:1,
-    productName: "Acer Gaming Laptop Nitro",
+    productName: "Acer Gaming Laptop Nitro Matte Panel 144Hz Wi-Fi 6 Support Obsidian Black",
     price: 1800.0,
     productImage: product1
   },
   {
     id:2,
-    productName: "HP Laptop, Gaming PC, RTX3050",
+    productName: "HP Laptop, Gaming PC RTX3050",
     price: 1000.0,
     productImage: product2
   },
   {
     id:3,
-    productName: "Canon EOS Kiss X90 DSLR",
+    productName: "Canon EOS Kiss X90 DSLR International Version (Black)",
     price: 1090.0,
     productImage: product3
   },
   {
     id:4,
-    productName: "LED Color Modes 24W",
+    productName: "LED Color Modes App Operated LED",
     price: 30.0,
     productImage: product4
   },
@@ -54,13 +54,13 @@ export const PRODUCTS = [
   },
   {
     id:7,
-    productName: "Logicool Mouse",
+    productName: "Logicool Mouse Wireless Charging, Authentic Japanese Product",
     price: 50.0,
     productImage: product7
   },
   {
     id:8,
-    productName: "Nikon 28-75mm f/2.8 Lens",
+    productName: "Nikon 28-75mm f/2.8 Lens Mirrorless SLR Lens",
     price: 900.0,
     productImage: product8
   },
@@ -82,9 +82,4 @@ export const PRODUCTS = [
     price: 80.0,
     productImage: product11
   },
-  
-  
-  
-  
-  
 ]

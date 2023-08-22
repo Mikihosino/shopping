@@ -4,7 +4,7 @@
   align-items: center; 
   justify-content: center; 
   padding: 8px 20%;
-  margin: 6px 16px;
+  margin: 6px 30%;
   border-style: solid;
   border-color: #ccc;
 }
@@ -64,4 +64,9 @@
   padding-left: 60%;
 }
 
-
+@media only screen and (max-width: 800px) {
+  .cartItem {
+  padding: 8px 20%;
+  margin: 6px 16px;
+  }
+}

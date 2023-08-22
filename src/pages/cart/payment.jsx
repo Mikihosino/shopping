@@ -17,10 +17,12 @@ export const Payment = () => {
   return (
     <div>
       <div className='navibttn'>
-        <button onClick={() => navigate("/")}><Storefront size={18} /> Shopping</button>
+        <button className='store-front' onClick={() => navigate("/")}><Storefront size={18} /> <span>Shopping</span></button>
         <button onClick={() => navigate("/cart")}> <span><ShoppingCart size={18} /> Cart</span></button>
       </div>
-      <PaymentScreen product={product} />
+      <div className='payment-screen'>
+        <PaymentScreen product={product} />
+      </div>
     </div>
   )
 }

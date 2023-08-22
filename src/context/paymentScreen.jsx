@@ -17,7 +17,6 @@ export const PaymentScreen = ({ product }) => {
         <div className="col-md-6">
           <span>Payment Method</span>
           <div className="card">
-          
             <div className="accordion" id="accordionExample">
               <div className="card">
                 <div className="card-header p-0" >

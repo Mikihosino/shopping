@@ -2,7 +2,6 @@
   margin-top: -30px;
   background-color: var(--color-bg);
   padding-bottom: 10px;
-  padding-left: 6px;
 }
 
 .navibttn button{
@@ -10,4 +9,12 @@
   color: #ffffff;
   background-color: var(--color-bg);
   font-weight: 300;
+}
+
+.store-front{
+  margin-left: 20px;
+}
+
+.payment-screen{
+  margin-top: -30px;
 }
