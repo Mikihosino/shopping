@@ -61,8 +61,8 @@
   color: #ffffff;
   font-weight: 700;
   border-radius: 20px;
-  margin-left: 20px;
-  margin-top: -40px;
+  margin-left: 36px;
+  margin-top: -46px;
   padding: 0px 8px;
   font-size: 16px;
 }
@@ -81,6 +81,11 @@
     font-size: 18px;
     max-height: 54px; /* 2行分の高さ（1行あたりの高さ × 行数） */
     line-height: 22px; /* 1行あたりの高さ */
+  }
+
+  .product-badge{
+    margin-left: 20px;
+    margin-top: -40px;
   }
 }
 

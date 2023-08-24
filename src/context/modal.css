@@ -13,7 +13,7 @@
 
 .modalContainer {
   width: 500px;
-  height: 550px;
+  height: 580px;
   background-color: white;
   border-radius: 5px;
   padding: 20px;
@@ -57,8 +57,8 @@
   cursor: pointer;
 }
 .ani{
-  width: '400px';
-  height: '400px';
+  width: '300px';
+  height: '300px';
 }
 
 
