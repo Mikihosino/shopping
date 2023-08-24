@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './paymentScreen.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faCreditCard } from '@fortawesome/free-regular-svg-icons'
 import { faCcMastercard, faCcVisa, faCcAmex, faCcJcb, faCcPaypal } from '@fortawesome/free-brands-svg-icons'
 import { faKey } from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import {Collapse} from 'react-collapse';
+import { ShopContext } from '../context/shop-context'
 
 
 export const PaymentScreen = ({ product }) => {
+  const{ addCommas } = useContext(ShopContext);
   const {price} = product;
   return (
     <div className="container d-flex justify-content-center mt-5 mb-5">
@@ -102,7 +103,7 @@ export const PaymentScreen = ({ product }) => {
             <div className="d-flex justify-content-between p-3">
 
               <div className="mt-1">
-                <sup className="super-price">Total:${price}</sup>
+                <sup className="super-price">Total:${addCommas(price)}</sup>
               </div>
             </div>
 
@@ -111,7 +112,7 @@ export const PaymentScreen = ({ product }) => {
             <div className="p-3">
               <div className="d-flex justify-content-between mb-2">
                 <span>Subtotal</span>
-                <span>${price}</span>
+                <span>${addCommas(price)}</span>
               </div>
 
               <div className="d-flex justify-content-between">

@@ -1,7 +1,6 @@
 .slider img {
   width: 100%;
   height: auto;
-  margin-top: -20px;
 }
 
 .slider {
@@ -9,9 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media only screen and (max-width: 800px) {
+  margin-top: -30px;
 }
 
 .slide {
@@ -22,5 +19,42 @@
 .slide.active {
   opacity: 1;
   transition-duration: 0.4s;
-  transform: scale(1.08);
 }
+
+@media only screen and (min-width: 800px) {
+  .slider img {
+    width: 60%;
+    height: auto;
+    margin-left:19%  ;
+  }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-blur {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%; /* 背景画像を完全にカバー */
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px); /* ブラーの強さを調整 */
+    opacity: 1; /* ブラーの透明度を調整 */
+    z-index: -1;
+  }
+  
+
+}
+
+

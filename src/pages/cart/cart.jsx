@@ -8,9 +8,12 @@ import { useNavigate } from "react-router-dom";
 
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
+  const { cartItems, addCommas, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount()
   const navigate = useNavigate()
+
+  
+
   return (
     <div className='CartContents'>
       <div className='CartTitle'>
@@ -26,7 +29,7 @@ export const Cart = () => {
 
     {totalAmount > 0 ?
       <div className='checkout'>
-        <p>Total: ${totalAmount}</p>
+        <p>Total: ${addCommas(totalAmount)}</p>
         <button onClick={() => navigate("/")}> Continue Shopping</button>
         <button onClick={() => navigate("/payment")}> <span>Checkout</span></button>
       </div>

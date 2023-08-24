@@ -6,7 +6,7 @@
 }
 
 .checkout p {
-  color: #d65e5e;
+  color: #000000;
   text-align: end;
   padding-right: 20px;
   font-weight: 600;
@@ -18,11 +18,9 @@
   margin: 0.5rem  0.5rem;
   font-size: 1rem;
   color: #FFFFFF;
-  background-color: black;
+  background-color: #000000;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -46,7 +44,11 @@
   font-size: 28px;
 }
 
-
+@media only screen and (min-width: 800px) {
+  .checkout p {
+    margin-right: 28%;
+  }
+}
 
 
 

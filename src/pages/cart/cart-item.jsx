@@ -6,14 +6,14 @@ import { Trash } from "phosphor-react";
 
 export const CartItem = (props) => {
   const {id, productName, price, productImage} = props.data;
-  const {cartItems, addToCart, removeFromCart, updateCartItemCount, deleteCartItem} = useContext(ShopContext);
+  const {cartItems, addCommas, addToCart, removeFromCart, updateCartItemCount, deleteCartItem} = useContext(ShopContext);
   return (
     <div className='cartItem'>
       <img src={productImage} />
       <div className='description'> 
         <p><b>
           {productName}</b></p>
-        <p> ${price}</p>
+        <p> ${addCommas(price)}</p>
       </div>
       <div className='countHandler'>
         <button onClick={() => removeFromCart(id)}> - </button>

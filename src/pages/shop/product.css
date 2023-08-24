@@ -37,10 +37,13 @@
   color: black;
   background-color: rgb(255, 251, 0);
   outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.addToCartBttn:active {
-  opacity: 0.6;
+.addToCartBttn:hover {
+  background-color: rgb(255, 187, 0);
+  color: #564e4e;
 }
 
 @media only screen and (max-width: 800px) {

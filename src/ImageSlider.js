@@ -25,7 +25,8 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className='slider'>
+    <div className="image-slider">
+      <section className='slider'>
       {SLIDERDATA.map((slide, index) => {
         return (
           <div
@@ -33,12 +34,17 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
+            <div className='image-container'>
+              <img src={slide.image} alt='banner image' className='image' />
+              <div className='image-blur' style={{ backgroundImage: `url(${slide.image})` }} />
+            </div>
             )}
           </div>
         );
       })}      
     </section>
+    </div>
+    
   );
 };
 
