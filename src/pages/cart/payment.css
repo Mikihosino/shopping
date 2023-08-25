@@ -18,3 +18,9 @@
 .payment-screen{
   margin-top: -30px;
 }
+
+@media only screen and (max-width: 800px){
+  .store-front{
+    margin-left: 16px;
+  }
+}

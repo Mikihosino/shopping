@@ -1,14 +1,14 @@
 .product-container {
-  height: 200px;
+  height: 280px;
   font-family: var(--font-family);
-  margin: 60px;
+  margin: 24px;
   align-items: center;
   text-align: center;
 }
 
 .product-container img{
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
 }
 
@@ -42,8 +42,8 @@
   padding: 3px 5px;
   border-radius: 10px;
   font-size: 16px;
-  color: black;
-  background-color: rgb(255, 251, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 25, 25);
   outline: none;
   cursor: pointer;
   transition: all 0.2s;
@@ -56,9 +56,9 @@
 
 .product-badge{
   position: absolute;
-  background-color: #46a044;
+  background-color: #ff9019;
+  color: #000000e2;
   border: none;
-  color: #ffffff;
   font-weight: 700;
   border-radius: 20px;
   margin-left: 36px;
@@ -86,6 +86,11 @@
   .product-badge{
     margin-left: 20px;
     margin-top: -40px;
+  }
+
+  .product-container img{
+    width: 100px;
+    height: 100px;
   }
 }
 

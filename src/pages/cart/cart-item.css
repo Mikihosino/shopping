@@ -36,6 +36,7 @@
 .cartItem .countHandler {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .cartItem .countHandler button {

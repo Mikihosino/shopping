@@ -18,7 +18,7 @@ const Modal = ({open, onClose}) => {
           <button className='continue-btn' onClick={onClose}>
             Continue Shopping
           </button>
-          <button className='continue-btn' onClick={() => navigate("/cart")}>
+          <button className='cart-btn' onClick={() => navigate("/cart")}>
             Go to Cart
           </button>
       </div>

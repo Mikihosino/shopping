@@ -12,8 +12,8 @@
 }
 
 .modalContainer {
-  width: 500px;
-  height: 580px;
+  width: 400px;
+  height: 450px;
   background-color: white;
   border-radius: 5px;
   padding: 20px;
@@ -24,9 +24,9 @@
 }
 
 .modalContainer h1 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
-  color: #007bff ;
+  color: #1d96c2f0 ;
 }
 
 .close-btn{
@@ -36,9 +36,10 @@
   left: 30%;
   position: absolute;
   padding: 4px 10px;
-  font-size: 20px;
+  font-size: 18px;
   transition: all 0.5s;
   cursor: pointer;
+  z-index: 10;
 }
 
 .bttnContainer {
@@ -47,41 +48,59 @@
   margin-top: 20px;
 }
 
+.cart-btn,
 .continue-btn {
-  background-color: #007bff;
-  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   margin-right: 6px;
   cursor: pointer;
 }
+
+.cart-btn {
+  background-color: #1d96c2f0;
+  color: white;
+}
+
+.continue-btn {
+  background-color: #000000cb;
+  color: white;
+}
+
 .ani{
-  width: '300px';
-  height: '300px';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 320px;
 }
 
 
 @media only screen and (max-width: 800px){
   .modalContainer {
-    width: 340px;
-    height: 450px;
+    width: 320px;
+    height: 360px;
   }
 
   .close-btn{
-    top: 18%;
+    top: auto;
     left: 13%;
   }
 
-  .lottie-container {
-    width: 100px;
-    height: 100px;
-  }
   .ani{
-    width: '100px';
-    height: '100px';
+    margin-top: 20px;
+    width: 160px;
+    height: 160px;
   }
+  .cart-btn{
+    padding: 6px 8px;
+    font-size: 16px;
+  }
+
   .continue-btn{
-    margin-bottom: 8px;
+    padding: 6px 8px;
+    font-size: 16px;
+    margin-top: 30px;
   }
+  
 }
